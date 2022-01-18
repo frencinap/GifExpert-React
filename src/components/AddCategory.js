@@ -16,7 +16,7 @@ export const AddCategory = ( {setCategories} ) => {
         //console.log('Submit Hecho');
         //validación submit
         if( inputValue.trim().length > 2) {
-            setCategories( cats => [...cats, inputValue] )
+            setCategories( cats => [ inputValue, ...cats] )
             setInputValue('')
         }     
     }
@@ -27,7 +27,7 @@ export const AddCategory = ( {setCategories} ) => {
                 type="text"
                 value={ inputValue }
                 onChange={ handleInputValue }
-                placeholder="Agrega un héroe"
+                placeholder="Busca un héroe"
             />
         </ form>
     )

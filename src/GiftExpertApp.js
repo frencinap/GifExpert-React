@@ -4,7 +4,7 @@ import { GifGrid } from "./components/GifGrid"
 
 export const GiftExpertApp = () => {
 
-    const [ categories, setCategories ] = useState(['One Punch Man'])
+    const [ categories, setCategories ] = useState([''])
 
     return (
         <>
