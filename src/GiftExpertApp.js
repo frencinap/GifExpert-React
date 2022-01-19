@@ -8,7 +8,7 @@ export const GiftExpertApp = () => {
 
     return (
         <>
-            <h2> GiftExpertApp</h2> 
+            <h2> GifExpert App</h2> 
             <AddCategory setCategories={ setCategories } />
             <hr />
             <ol>
