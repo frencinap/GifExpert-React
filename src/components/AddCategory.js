@@ -13,10 +13,11 @@ export const AddCategory = ( {setCategories} ) => {
     const handleSubmit = (e) => {
         //prevenir el comportamiento por defecto del submit
         e.preventDefault()
-        //console.log('Submit Hecho');
+        console.log('Submit Hecho');
         //validación submit
         if( inputValue.trim().length > 2) {
             setCategories( cats => [ inputValue, ...cats] )
+            //limpiamos la caja de texto
             setInputValue('')
         }     
     }

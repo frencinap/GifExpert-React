@@ -2,10 +2,13 @@
   background-color: #121212;
   color: white;
   font-family:  Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body{
   padding: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 hr{
   background-color: whitesmoke;
@@ -50,4 +53,9 @@ input{
   display: block;
   margin: auto;
   max-width: 70%;
+}
+
+.arrow{
+  font-size: 2.5rem;
+  cursor: pointer;
 }

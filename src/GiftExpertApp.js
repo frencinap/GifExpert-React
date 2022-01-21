@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { AddCategory } from "./components/AddCategory"
 import { GifGrid } from "./components/GifGrid"
+import { ScrollButton } from "./components/ScrollButton"
 
 export const GiftExpertApp = () => {
 
@@ -20,8 +21,8 @@ export const GiftExpertApp = () => {
                         />
                     ))
                 }
-            </ol>    
-
+            </ol>
+            <ScrollButton />    
         </>
     )
 }
