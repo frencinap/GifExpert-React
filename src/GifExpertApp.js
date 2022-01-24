@@ -3,9 +3,11 @@ import { AddCategory } from "./components/AddCategory"
 import { GifGrid } from "./components/GifGrid"
 import { ScrollButton } from "./components/ScrollButton"
 
-export const GifExpertApp = () => {
+// vamos a agregar una categoría nueva para trabajarla en el testsuite
+//agregaremos defaultcategories en vez de un string vacío
+export const GifExpertApp = ( { defaultCategories = [] } ) => {
 
-    const [ categories, setCategories ] = useState([''])
+    const [ categories, setCategories ] = useState( defaultCategories )
 
     return (
         <>
