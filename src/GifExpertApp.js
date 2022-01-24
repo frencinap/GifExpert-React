@@ -3,7 +3,7 @@ import { AddCategory } from "./components/AddCategory"
 import { GifGrid } from "./components/GifGrid"
 import { ScrollButton } from "./components/ScrollButton"
 
-export const GiftExpertApp = () => {
+export const GifExpertApp = () => {
 
     const [ categories, setCategories ] = useState([''])
 
@@ -20,9 +20,9 @@ export const GiftExpertApp = () => {
                             key={category}
                         />
                     ))
-                }
+                }    
             </ol>
-            <ScrollButton />    
+            <ScrollButton/>
         </>
     )
 }

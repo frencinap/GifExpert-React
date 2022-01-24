@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { FiArrowUpCircle } from "react-icons/fi";
 import { IconContext } from "react-icons";
 
-
-
 export const ScrollButton = () => {
 
     const [visible, setVisible] = useState(false)
@@ -28,7 +26,6 @@ export const ScrollButton = () => {
 
     window.addEventListener('scroll', toggleVisible)
 
-
     return (
         <>
             <IconContext.Provider value={{ className: "arrow"}}>
@@ -36,8 +33,6 @@ export const ScrollButton = () => {
                 style={{display: visible ? 'inline' : 'none'}}
                 onClick={ scrollToTop } />
             </IconContext.Provider>
-        </>
-        
-      
-  )
+        </>    
+    )
 };
